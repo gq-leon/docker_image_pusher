@@ -1,5 +1,1 @@
-# go编译镜像
-golang:1.24.1-alpine
-# 轻量的alpine镜像
-alpine:3.22
-nginx
+fatedier/frp:latest
