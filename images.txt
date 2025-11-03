@@ -1,1 +1,2 @@
-portainer/portainer-ce:latest
+portainer/agent:lts
+portainer/portainer-ce:lts
