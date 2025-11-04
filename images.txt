@@ -1,2 +1,1 @@
-portainer/agent:lts
-portainer/portainer-ce:lts
+redis:8.0-alpine
