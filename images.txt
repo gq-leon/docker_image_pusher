@@ -1,1 +1,1 @@
-redis:8.0-alpine
+redis:7.2.15-alpine
