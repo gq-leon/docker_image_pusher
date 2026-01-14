@@ -1,1 +1,1 @@
-tzfun/etcd-workbench
+swaggerapi/swagger-ui:unstable
