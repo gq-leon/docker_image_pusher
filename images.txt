@@ -1,1 +1,1 @@
-swaggerapi/swagger-ui:unstable
+golang:1.23.7-alpine3.21
