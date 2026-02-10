@@ -1,6 +1,9 @@
 # 基础 Golang 镜像
 golang:1.23.7-alpine3.21
 
+# 基础 Node.js 镜像
+node:18-alpine
+
 # ===== Golang 链路追踪系统 =====
 # Jaeger 分布式追踪
 jaegertracing/all-in-one:latest
