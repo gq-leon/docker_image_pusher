@@ -1,1 +1,64 @@
+# 基础 Golang 镜像
 golang:1.23.7-alpine3.21
+
+# ===== Golang 链路追踪系统 =====
+# Jaeger 分布式追踪
+jaegertracing/all-in-one:latest
+jaegertracing/jaeger-collector:latest
+jaegertracing/jaeger-agent:latest
+jaegertracing/jaeger-query:latest
+
+# Zipkin 分布式追踪
+openzipkin/zipkin:latest
+openzipkin/zipkin-slim:latest
+
+# OpenTelemetry 数据收集
+otel/opentelemetry-collector:latest
+otel/opentelemetry-collector-contrib:latest
+
+# Prometheus 监控 (常与追踪系统配合使用)
+prom/prometheus:latest
+prom/prometheus:latest
+prom/alertmanager:latest
+prom/pushgateway:latest
+
+# Grafana 可视化 (配合追踪和监控使用)
+grafana/grafana:latest
+grafana/loki:latest
+grafana/promtail:latest
+grafana/tempo:latest
+
+# ===== Elasticsearch 生态 =====
+# Elasticsearch 搜索引擎
+elasticsearch:8.15.0
+elasticsearch:7.17.25
+docker.elastic.co/elasticsearch/elasticsearch:8.15.0
+docker.elastic.co/elasticsearch/elasticsearch:7.17.25
+
+# Kibana 数据可视化
+kibana:8.15.0
+kibana:7.17.25
+docker.elastic.co/kibana/kibana:8.15.0
+docker.elastic.co/kibana/kibana:7.17.25
+
+# Logstash 日志收集处理
+logstash:8.15.0
+logstash:7.17.25
+docker.elastic.co/logstash/logstash:8.15.0
+docker.elastic.co/logstash/logstash:7.17.25
+
+# APM (应用性能监控) - Elasticsearch 的链路追踪方案
+docker.elastic.co/apm/apm-server:8.15.0
+docker.elastic.co/apm/apm-server:7.17.25
+
+# Filebeat 日志收集
+docker.elastic.co/beats/filebeat:8.15.0
+docker.elastic.co/beats/filebeat:7.17.25
+
+# Metricbeat 指标收集
+docker.elastic.co/beats/metricbeat:8.15.0
+docker.elastic.co/beats/metricbeat:7.17.25
+
+# Packetbeat 网络数据收集
+docker.elastic.co/beats/packetbeat:8.15.0
+docker.elastic.co/beats/packetbeat:7.17.25
